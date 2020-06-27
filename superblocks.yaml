@@ -4,11 +4,13 @@ jobs:
     image: node
     script:
       - npm install truffle
+      - npm install
       - npx truffle compile
   test:
     image: node
     script:
       - npm install truffle
+      - npm install
       - npx truffle test
 stages:
   - pipeline:
